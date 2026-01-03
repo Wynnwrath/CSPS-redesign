@@ -25,8 +25,9 @@ import AdminForumPage from "../pages/admin/forum";
 import AdminMerchPage from "../pages/admin/merch";
 
 import NotFoundPage from "../pages/notFound";
+import { path } from "framer-motion/client";
 const routers = [
-  { path: "/", element: <AdminMerchPage /> },
+  { path: "/", element: <LandingPage /> },
   { path: "/login", element: <LoginPage /> },
   { path: "/contact-us", element: <ContactUsPage /> },
   { path: "/forgot-password", element: <ForgotPasswordPage /> },
@@ -45,6 +46,7 @@ const routers = [
   { path: "/admin/products", element: <AdminProductsPage /> },
   { path: "/admin/sales", element: <AdminSalesPage /> },
   { path: "/admin/forum", element: <AdminForumPage /> },
+  { path: "/admin/merch", element: <AdminMerchPage /> },
   { path: "*", element: <NotFoundPage /> },
 ];
 
